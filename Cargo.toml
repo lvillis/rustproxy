@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = [
+    "rustproxy",
+    "rustproxy-cli",
+]
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true
